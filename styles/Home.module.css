@@ -1,0 +1,35 @@
+/*
+.font {
+    color: #1F38A6;
+    text-align: center;
+}
+
+.content_box {
+    height: 40rem;
+    margin: 5rem;
+}
+
+.inner_left {
+    background-color: white;
+}
+
+.inner_right {
+    background-color: yellow;
+}
+*/
+
+.background_box{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.content_box{
+    padding: 2vh 2vw;
+    
+    outline: solid 3px white;
+    color: white;
+}
