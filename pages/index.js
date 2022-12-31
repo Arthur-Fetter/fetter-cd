@@ -1,46 +1,33 @@
 import homeStyles from "../styles/home.module.css"
+import {useRouter} from 'next/router'
 
 export default function Home() {
+  const router = useRouter();
+
+  
   return (
     <>
-    <div className={homeStyles.background_box}>
-      <div className={homeStyles.content_box}>
-        <h1>Welcome to my website!</h1>
-        <p>what would you like to see?</p>
-      </div>
+
+    <div className={homeStyles.background}>
+      <ul className={homeStyles.content_list}>
+        <li className={homeStyles.content_item}>
+          <button className={homeStyles.button} type="button" onClick={() => router.push('/Engineering')}>
+            Engineering
+          </button> 
+        </li>
+        <li className={homeStyles.content_item}>
+          <button className={homeStyles.button} type="button" onClick={() => router.push('/Lifestyle')}>
+            Lifestyle
+          </button>
+        </li>
+        <li className={homeStyles.content_item}>
+          <button className={homeStyles.button} type="button" onClick={() => router.push('/Spaceship')}>
+            Spaceship
+          </button>
+        </li>
+      </ul>
     </div>
 
-    {/*
-    <div>
-      <div className={"row " + homeStyles.content_box}>
-        <div className={"col-8"}>
-          <div className={"row "}>
-            <div className={"col-9 " + homeStyles.inner_left}>
-              <h2> yo from inside left</h2>
-            </div>
-
-            <div className={"col-3 " + homeStyles.inner_right}>
-              <h2> yo from inside right</h2>
-            </div>
-          </div>
-        </div>
-
-        <div className={"col-4 "}>
-          <h2>yo</h2>
-        </div>
-      </div>
-      
-      <div className="row">
-        <div className="col-8">
-          <h2>yo</h2>
-        </div>
-
-        <div className="col-4">
-          <h2>yo</h2>
-        </div>
-      </div>
-    </div>
-    */}
     </>
   )
   

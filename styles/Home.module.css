@@ -1,35 +1,43 @@
-/*
-.font {
-    color: #1F38A6;
+.background {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid white;
+}
+
+.content_list {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    width: 50vw;
+
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.content_list > * {
+    flex-basis: 33%;  
+}
+
+.content_item {
+    display: flex;
+
+    list-style: none;
     text-align: center;
 }
 
-.content_box {
-    height: 40rem;
-    margin: 5rem;
-}
+.button {
+    width: 100%;;
+    text-align: center;
 
-.inner_left {
-    background-color: white;
-}
-
-.inner_right {
-    background-color: yellow;
-}
-*/
-
-.background_box{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-}
-
-.content_box{
-    padding: 2vh 2vw;
-    
-    outline: solid 3px white;
+    background-color: transparent;
     color: white;
+    border: 0;
 }
